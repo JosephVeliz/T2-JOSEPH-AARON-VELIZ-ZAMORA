@@ -24,15 +24,15 @@ export class DashboardComponent {
   }
 
   irPregunta02():void{
-    this.router.navigate(["pregunta2"], {relativeTo: this.route})
+    this.router.navigate(["pregunta02"], {relativeTo: this.route})
   }
 
   irPregunta03():void{
-    this.router.navigate(["pregunta3"], {relativeTo: this.route})
+    this.router.navigate(["pregunta03"], {relativeTo: this.route})
   }
 
   irPregunta04():void{
-    this.router.navigate(["pregunta4"], {relativeTo: this.route})
+    this.router.navigate(["pregunta04"], {relativeTo: this.route})
   }
 
 

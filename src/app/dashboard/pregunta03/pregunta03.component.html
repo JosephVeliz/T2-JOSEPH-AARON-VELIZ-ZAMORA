@@ -1,1 +1,14 @@
-<p>pregunta03 works!</p>
+<div class="container">
+    <h2>Calculadora de Pago en Llantería</h2>
+
+    <div class="form-group">
+        <label for="cantidad">Cantidad de Llantas a Comprar:</label>
+        <input id="cantidad" type="number" [(ngModel)]="cantidad" class="form-control">
+    </div>
+
+    <button class="btn btn-primary" (click)="calcularTotalPagar()">Calcular Total a Pagar</button>
+
+    <div *ngIf="totalPagar !== 0" class="resultado">
+        <p>El total a pagar es: S/. {{ totalPagar | number: '1.2-2' }}</p>
+    </div>
+</div>
