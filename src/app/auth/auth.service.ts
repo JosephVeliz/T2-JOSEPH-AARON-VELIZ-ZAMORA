@@ -11,7 +11,6 @@ export class AuthService {
   login(usuario: string, password: string): boolean {
     if (usuario === "Veliz" && password === "12345") {
       sessionStorage.setItem("usuario", usuario);
-      sessionStorage.setItem("isLogged", "true");
       return true;
     }
     return false;
@@ -21,7 +20,7 @@ export class AuthService {
     sessionStorage.clear()
   }
 
-  logUser(): boolean {
-    return sessionStorage.getItem("isLogged") === "true";
+  ussGuardado(): boolean {
+    return sessionStorage.getItem("usuario") !== null;
   }
 }
